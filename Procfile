@@ -1,1 +1,1 @@
-web gunicorn myproject.wsgi:application --log-file -
+waitress-serve --listen=*:8000 myproject.wsgi:application
